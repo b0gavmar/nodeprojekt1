@@ -1,0 +1,20 @@
+<div class="backdrop"></div>
+<header class="main-header">
+    <button id="side-menu-toggle">Menu</button>
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Books</a>
+            </li>
+            
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/add-book' ? 'active' : '' %>" href="/admin/add-book">Add Book
+                </a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/adminlibrary' ? 'active' : '' %>" href="/admin/adminlibrary">Admin Library
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

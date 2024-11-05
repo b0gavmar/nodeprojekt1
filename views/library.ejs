@@ -1,0 +1,38 @@
+<%- include('includes/head') %>
+
+    <link rel="stylesheet" href="/css/book.css">
+    </head>
+
+    <body>
+        <%- include('includes/navigation.ejs') %>
+
+            <main>
+                <% if (books.length> 0) { %>
+                    <h1>Recorded books</h1>
+                    <div class="grid">
+                        <% for (let book of books) { %>
+                            <article class="card book-item">
+                                <header class="card__header">
+                                    <h1 class="book__title">
+                                        <%= book.title %>
+                                    </h1>
+                                </header>
+                                <div class="card__image">
+                                    <img src="<%= book.imageUrl%>" alt="A Book">
+                                </div>
+                                <div class="card__content">
+                                    <p class="book__description">
+                                        <%= book.description%>
+                                        <br><br>
+                                        ID = <%= book.id%>
+                                    </p>
+                                </div>
+
+                            </article>
+                            <% } %>
+                    </div>
+                    <% } else { %>
+                        <h1>No Book Found</h1>
+                        <% } %>
+            </main>
+            <%- include('includes/end') %>
