@@ -10,7 +10,7 @@ export const getAddBook = (req, res, next) => {
   
   export const postAddBook = (req, res, next) => {
     const title = req.body.title
-    const imageUrl = req.body.imageUrl || "https://cdn.pixabay.com/photo/2016/03/31/20/51/book-1296045_960_720.png"
+    const imageUrl = req.body.imageUrl || "https://cdn-icons-png.flaticon.com/512/8832/8832880.png"
     const desc = req.body.description
     const book = new Book(null, title, imageUrl,desc)
     book.save()
