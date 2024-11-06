@@ -26,10 +26,11 @@ const setBooksFileContent = (content) => {
 }
 
 class Book {
-  constructor(id, title, imageUrl) {
+  constructor(id, title, imageUrl, description) {
     this.id = id
     this.title = title
     this.imageUrl = imageUrl
+    this.description = description
   }
 
   save() {
@@ -73,7 +74,7 @@ class Book {
 
   static findById(id) {
     const books = getBooksFileContent()
-    const book = books.find(book => prod.id.toString() === id.toString())
+    const book = books.find(book => book.id.toString() === id.toString())
     return book
   }
 }

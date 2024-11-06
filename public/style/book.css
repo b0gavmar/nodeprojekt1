@@ -1,21 +1,23 @@
 .book-form {
-    width: 20rem;
-    max-width: 90%;
-    margin: auto;
-    display: block;
+    width: 100%; 
+    max-width: 30rem; 
+    margin: 2rem auto; 
+    padding: 1rem; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); 
+    border-radius: 4px; 
+    background-color: #82bdb3; 
 }
 
 .book-item {
-    width: 20rem;
-    max-width: 95%;
-    margin: 1rem;
+    width: 100%; 
+    max-width: 25rem; 
+    margin: 1rem auto; 
 }
 
 .book__title {
-    font-size: 1.2rem;
+    font-size: 1.5rem; 
     text-align: center;
 }
-
 
 .book__description {
     text-align: center;
