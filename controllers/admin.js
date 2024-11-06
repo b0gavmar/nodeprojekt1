@@ -46,7 +46,7 @@ export const getAddBook = (req, res, next) => {
     res.redirect('/')
   }
   
-  export const getBooks = (req, res, next) => {
+  export const getAdminLibrary = (req, res, next) => {
     const books = Book.fetchAll()
         res.render('admin/adminlibrary', {
         prods: books,

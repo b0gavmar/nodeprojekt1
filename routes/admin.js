@@ -7,7 +7,7 @@ const router = express.Router()
 
 router.get('/add-book', adminController.getAddBook)
 
-router.get('/adminlibrary', adminController.getBooks)
+router.get('/adminlibrary', adminController.getAdminLibrary)
 
 router.post('/add-book', adminController.postAddBook)
 
